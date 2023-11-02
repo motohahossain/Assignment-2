@@ -1,0 +1,339 @@
+:root{
+    --primaryColor: #3FC8F4;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --offWhite: #f7f7f7;
+    --darkGrey: #afafaf;
+    --mainOrange: #FF7518;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.25rem;
+    --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    --darkShadow: 4px 10px 5px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: var(--mainBlack);
+    line-height: 1.4;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.navbar{
+    padding: 0.5rem 1rem;
+    z-index: 1;
+    overflow: hidden;
+    background-color: white;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    border: 1px solid var(--darkGrey);
+}
+
+.nav-center{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-logo{
+    height: 110px;
+    width: 220px;
+}
+
+.nav-links{
+    display: flex;
+    height: auto;
+}
+
+.nav-link{
+    display: block;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primaryColor);
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+}
+
+.nav-link:hover{
+    color: var(--mainOrange);
+    background: var(--mainGrey);
+    padding-left: 2.5rem;
+}
+
+.nav-icons{
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+    transition: var(--mainTransition);
+}
+
+.nav-icon{
+    color: var(--mainOrange);
+    margin-right: 0.8rem;
+    transition: var(--mainTransition);
+}
+
+.nav-icon:hover{
+    color: var(--primaryColor);
+    transform: translateY(-10%);
+}
+
+.tour{
+    min-height: calc(100vh - 62px);
+    margin-top: 130px;
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+    url('main.jpeg') center/cover no-repeat fixed;
+}
+
+.tour-title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+.tour-subtitle{
+    color: var(--mainOrange);
+    font-size:3.05rem;
+}
+
+.tour-banner {
+    text-align: center;
+    color: var(--mainWhite);
+    padding: 0 2rem;
+}
+
+.tour-text{
+    width: 85%;
+    margin: 0 auto;
+    letter-spacing: var(--mainSpacing);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.btn-white{
+    border: 1px solid var(--mainWhite);
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: var(--mainSpacing);
+}
+
+.btn-white:hover{
+    color: var(--mainOrange);
+    background-color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+
+.section{
+    padding: 5rem 0;
+}
+
+.title-wrapper{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.subtitle{
+    color: var(--primaryColor);
+}
+
+.section-center{
+    width: 85vw;
+    margin:  4rem auto 2rem auto;
+    max-width: 1170px;
+}
+
+.about-photo{
+    height: 20rem;
+    width:30rem;
+    box-shadow: 5px 5px 10px #555;
+}
+
+.about-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-info{
+    margin-left: 70px;
+}
+
+.about-info h3{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: var(--mainSpacing);
+}
+
+.about-info p{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.btn-more{
+    border: 1px solid var(--primaryColor);
+    box-sizing: border-box;
+    padding: .6rem 1.2rem;
+    text-decoration: none;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    text-transform: uppercase;
+    border-radius: 6px;
+    letter-spacing: var(--mainSpacing);
+    font-size: .9rem;
+}
+
+.btn-more:hover{
+    color: var(--primaryColor);
+    background-color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+
+.services{
+    background-color: #ececec;
+}
+
+.title-wrapper h2{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.service-subtitle{
+    color: var(--mainOrange);
+}
+
+.services-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.service-image{
+    height: 20rem;
+    width: 23rem;
+    box-shadow: 4px 4px 8px #555;
+}
+
+.img-container{
+    position: relative;
+    background: var(--mainOrange);
+}
+
+.service-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    cursor: pointer;
+    transition: var(--mainTransition);
+    opacity: 0;
+}
+
+.service-image{
+    transition: var(--mainTransition);
+}
+
+.img-container:hover .service-image{
+    opacity: 0.5;
+}
+
+.img-container:hover .service-icon {
+    opacity: 1;
+}
+
+.service-info{
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-text{
+    width: 90%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.service-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.footer{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding: 2.5rem;
+}
+
+.footer-links,
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-link{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: var(--primaryColor);
+}
+
+.footer-icon{
+    font-size: 1.9rem;
+    margin-right: 1rem;
+    color: var(--mainWhile);
+    transition: var(--mainTransition);
+}
+
+.footer-icon:hover{
+    color: var(--mainOrange);
+    transform: translateY(-10%);
+}
+
+.copyright{
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
